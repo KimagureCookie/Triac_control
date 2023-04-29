@@ -14,5 +14,6 @@ The Triac side of the circuit consists of an RC snubber circuit. This is not man
 https://www.youtube.com/watch?v=wgNMepGIrTk&t=13s 
 
 Here is the schematic for Triac and optoisolater implementation:
-(MOC3022_Farnell)[https://github.com/KimagureCookie/Triac_control/blob/main/pic/Moc3022_application_schematic.png]
+
+![MOC3022_Farnell](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Moc3022_application_schematic.png)
 	
