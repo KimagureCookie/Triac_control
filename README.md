@@ -30,7 +30,7 @@ Prototypes on Copper clad:
 
 ![Zero crossing](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Zero_crossing_detector.jpg)
 
-If your prototyping/testing,try to implement both circuits on seperate boards .
+If your prototyping/testing, try to implement both circuits on seperate boards.
 This way you could isolate High voltage stuff and be extra safe. 
 
 	
