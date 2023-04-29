@@ -11,15 +11,17 @@ Choose the right value for the current-limiting resistor by referencing the opto
 (Do note that there are other methods for zero-crossing detection. You can directly connect the optocoupler to mains using quite large value resistors, but I find this not so safe while working, so I will stick with this method.)
 
 The Triac side of the circuit consists of an RC snubber circuit. This is not mandatory if you're using resistive loads like a heater but is essential if it's an inductive load. I will be adding this anyway since it doesn't hurt to have the feature. Since I'm working on a heater project, the snubber values are just the default ones stated in the MOC3022 datasheet. If you want to calculate exact values for your application, I would recommend watching [this](https://www.youtube.com/watch?v=wgNMepGIrTk&t=13s) YouTube video as a starter!
+If your wondering which Triac I used it is the classic [BTA16 600B](https://www.st.com/resource/en/datasheet/t1610.pdf).
 
-Triac and optoisolater implementation:
+Triac and optoisolater schematic:
 
 ![MOC3022_Farnell](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Moc3022_application_schematic.png)
 check out the [MOC3022](https://www.farnell.com/datasheets/97984.pdf) datasheet for more info.
 
-Zero crossing detector implementation:
+Zero crossing detector schematic:
 
 ![Zero_Cross](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Screenshot%202023-04-29%20214245.png)
+
 
 Prototypes on Copper clad:
 
