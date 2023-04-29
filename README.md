@@ -10,10 +10,24 @@ Choose the right value for the current-limiting resistor by referencing the opto
 
 (Do note that there are other methods for zero-crossing detection. You can directly connect the optocoupler to mains using quite large value resistors, but I find this not so safe while working, so I will stick with this method.)
 
-The Triac side of the circuit consists of an RC snubber circuit. This is not mandatory if you're using resistive loads like a heater but is essential if it's an inductive load. I will be adding this anyway since it doesn't hurt to have the feature. Since I'm working on a heater project, the snubber values are just the default ones stated in the MOC3022 datasheet. If you want to calculate exact values for your application, I would recommend watching this YouTube video as a starter!
-https://www.youtube.com/watch?v=wgNMepGIrTk&t=13s 
+The Triac side of the circuit consists of an RC snubber circuit. This is not mandatory if you're using resistive loads like a heater but is essential if it's an inductive load. I will be adding this anyway since it doesn't hurt to have the feature. Since I'm working on a heater project, the snubber values are just the default ones stated in the MOC3022 datasheet. If you want to calculate exact values for your application, I would recommend watching [this](https://www.youtube.com/watch?v=wgNMepGIrTk&t=13s) YouTube video as a starter!
 
-Here is the schematic for Triac and optoisolater implementation:
+Triac and optoisolater implementation:
 
 ![MOC3022_Farnell](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Moc3022_application_schematic.png)
+check out the [MOC3022](https://www.farnell.com/datasheets/97984.pdf) datasheet for more info.
+
+Zero crossing detector implementation:
+
+![Zero_Cross](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Screenshot%202023-04-29%20214245.png)
+
+Prototypes on Copper clad:
+
+![Phase angle control](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Phase_angle_controller.jpg)
+
+![Zero crossing](https://github.com/KimagureCookie/Triac_control/blob/main/pic/Zero_crossing_detector.jpg)
+
+If your prototyping/testing,try to implement both circuits on seperate boards .
+This way you could isolate High voltage stuff and be extra safe. 
+
 	
